@@ -8,7 +8,10 @@
 //#include "compress.h"
 #include "mat.h"
 #include <vector>
+<<<<<<< HEAD
 #include <string>
+=======
+>>>>>>> a412cb64e18484b05a01071793d7d6655b8a5c7e
 
 void PackBitsEncode(const mat<uint8_t>& img, std::vector<uint8_t>& encoded){
     if(img.size() == 0){
@@ -78,6 +81,7 @@ void PackBitsEncode(const mat<uint8_t>& img, std::vector<uint8_t>& encoded){
     encoded.push_back(128);
 }
 
+<<<<<<< HEAD
 void findCode(std::vector<uint8_t>& b, std::string& str_base64, std::vector<char>& table64){
     char c1 = (b.at(0) & 0xfc) >> 2;
     char c2 = ((b.at(0) & 0x03) << 4) | ((b.at(1) & 0xf0) >> 4);
@@ -139,3 +143,5 @@ std::string Base64Encode(const std::vector<uint8_t>& v){
     
     return str_base64;
 }
+=======
+>>>>>>> a412cb64e18484b05a01071793d7d6655b8a5c7e
