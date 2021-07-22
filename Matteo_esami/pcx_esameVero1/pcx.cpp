@@ -261,6 +261,8 @@ bool load_pcx(const std::string& filename, mat<vec3b>& img){
             (*it)[2] = *b;
             
             it++;
+            g++;
+            b++;
             byte_scritti++;
     
         }
